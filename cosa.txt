@@ -1,0 +1,4 @@
+PersonFile[100]:Name[10] Age[10] City[10]
+Maria Ordoñez 20 NY
+Jose Zapata   40 NY
+

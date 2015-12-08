@@ -6,9 +6,9 @@ using std::string;
 using std::vector;
 
 class Campo {
-	//char* cadena = new char[100];
+	//stricadena[30];
 	string nombre;
-	string tipo[10];
+	string tipo;
 	int size;
 	int size_dec;
 	bool key;
@@ -23,7 +23,7 @@ public:
 	const string getTipo() const;
 	const int getSize() const;
 	const int getSize_dec() const;
-	const bool getKey() const;
+	const bool getKey()const;
 	void setNombre(string nombre);
 	void setTipo(string tipo);
 	void setSize(int size);

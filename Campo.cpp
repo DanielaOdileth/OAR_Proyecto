@@ -5,7 +5,7 @@
 using namespace std;
 
 Campo::Campo(){
-	nombre = "";
+	nombre = " ";
 	tipo = "";
 	size = 0;
 	size_dec = 0;
@@ -29,7 +29,6 @@ Campo::Campo(const Campo& other){
 }
 
 Campo::~Campo(){
-
 }
 
 const string Campo::getNombre()const{
