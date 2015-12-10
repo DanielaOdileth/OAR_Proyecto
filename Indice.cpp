@@ -6,30 +6,36 @@ using std::string;
 using std::vector;
 
 Indice::Indice(){
-
+	//n = NULL;
+	//next = NULL;
 }
 
-Indice::Indice(vector<Nodo> nodos){
-	for(int i = 0; i < nodos.size(); i++){
-		this->nodos[i] = nodos[i];
-	}
-
+Indice::Indice(Nodo n, Nodo next){
+	this->n = n;
+	this->next = next;
 }
 
 Indice::Indice(const Indice& other){
-	for(int i = 0; i < other.nodos.size(); i++){
-		nodos.push_back(other.nodos[i]);
-	}
+	n = other.n;
+	next = other.next;
 }
 
 Indice::~Indice(){
 
 }
 
-const vector<Nodo> Indice::getNodo()const{
-	return nodos;
+const Nodo Indice::getN()const{
+	return n;
+}
+	
+const Nodo Indice::getNext()const{
+	return next;
 }
 
-//void Indice::addNodo(const Nodo nodo_n){
-	//nodos.push_back(nodo_n);
-//}
+void Indice::setN(Nodo n){
+	this->n = n;
+}
+
+void Indice::setNext(Nodo next){
+	this->next = next;
+}

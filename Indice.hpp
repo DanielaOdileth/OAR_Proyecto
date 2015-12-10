@@ -7,14 +7,17 @@ using std::string;
 using std::vector;
 
 class Indice{
-	vector<Nodo> nodos; 
+	Nodo n;
+	Nodo next; 
 
 public:
 	Indice();
-	Indice(vector<Nodo> nodos);
+	Indice(Nodo n, Nodo next);
 	//Registro(int size);
 	Indice(const Indice&);
 	~Indice();
-	const vector<Nodo> getNodo()const;
-	void addINodo(const Nodo nodo_n);
+	const Nodo getN()const;
+	const Nodo getNext()const;
+	void setN(Nodo n);
+	void setNext(Nodo nuevo);
 };
